@@ -1,0 +1,23 @@
+{
+  "name": "dynamic-poly-terrain-demo",
+  "version": "0.0.0",
+  "description": "",
+  "private": true,
+  "main": "demo.js",
+  "devDependencies": {
+    "brfs": "~0.0.8",
+    "game-shell-orbit-camera": "~0.0.0",
+    "gl-buffer": "~0.1.1",
+    "gl-matrix": "~2.0.0",
+    "gl-now": "~0.0.4",
+    "gl-shader": "~0.0.6",
+    "gl-vao": "~0.0.2",
+    "heightmap-mesher": "~0.0.0",
+    "zeros": "~0.0.0"
+  },
+  "scripts": {
+    "start": "beefy demo.js:bundle.js --live -- -t brfs",
+    "prepublish": "browserify demo.js -t brfs > bundle.js"
+  },
+  "license": "BSD-2-Clause"
+}
