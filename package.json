@@ -19,5 +19,5 @@
     "start": "beefy demo.js:bundle.js --live -- -t brfs",
     "prepublish": "browserify demo.js -t brfs > bundle.js"
   },
-  "license": "BSD-2-Clause"
+  "license": "MIT"
 }
